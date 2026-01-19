@@ -36,3 +36,5 @@ npm run dev
 ```sh
 npm run build
 ```
+# Vue-Projects
+Pulse Fit is the fitness tracking and training app for the begineers.
