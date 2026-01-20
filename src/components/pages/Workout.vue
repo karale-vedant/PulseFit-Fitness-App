@@ -33,7 +33,6 @@
           <button
             @click="
               () => {
-                // console.log('Clicked the button' + w.name);
                 selectedExercise = w.name;
               }
             "
@@ -93,7 +92,6 @@ const {data, selectedWorkout} = defineProps({
 const { workout, warmup } = workoutProgram[selectedWorkout];
 //const selectedExercise = null;
 let selectedExercise = ref(null);
-console.log(selectedExercise);
 const exerciseDescription = computed(
   () => exerciseDescriptions[selectedExercise.value]
 );

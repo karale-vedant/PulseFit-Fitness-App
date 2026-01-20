@@ -17,7 +17,6 @@ for (let workoutIdx in workoutProgram) {
     defaultData[workoutIdx][e.name] = "";
   }
 }
-console.log(defaultData);
 
 const selectedDisplay = ref(1);
 const data = ref(defaultData); //{1....30:{exercise_name:'',.....}}
@@ -30,7 +29,6 @@ const isWorkoutComplete = computed(() => {
   } // guard close to exit function
 
   const isCompleteCheck = Object.values(currWorkout).every((ex) => !!ex);
-  console.log("ISCOMPLETE: ", isCompleteCheck);
   return isCompleteCheck;
 });
 
